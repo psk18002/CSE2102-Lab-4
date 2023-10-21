@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+    <div th:fragment="content" class="navbar">
+        <h1 class="navbar-title">Navigation Bar</h1>
+        <a th:href="@{/proxy/8094/}" class="navbar-link">Home</a>
+        <a th:href="@{/proxy/8094/logincreate}" class="navbar-link">Login/Create Account</a>
+        <a th:href="@{/proxy/8094/usr}" class="navbar-link">User Profile/Account</a>
+        <a th:href="@{/proxy/8094/qna}" class="navbar-link">Questions and Answers</a>
+    </div>
+</body>
+</html>
